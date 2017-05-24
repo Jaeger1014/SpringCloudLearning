@@ -1,0 +1,10 @@
+server:
+  port: 14001
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://10.89.0.190:14000/
+      label: master
+      profile: dev

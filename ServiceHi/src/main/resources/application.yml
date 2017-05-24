@@ -1,0 +1,14 @@
+jaegerConfig:
+  registerServerAddr:
+    hostname: 10.89.0.190
+    port: 8000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${jaegerConfig.registerServerAddr.hostname}:${jaegerConfig.registerServerAddr.port}/eureka/
+server:
+  port: 10003
+spring:
+  application:
+    name: service-hi

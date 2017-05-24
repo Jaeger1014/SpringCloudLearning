@@ -1,0 +1,13 @@
+server:
+  port: 14000
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jaeger1014/SpringCloudLearning
+        label: master
+        username: Jaeger1014
+        password: Qaz1234
